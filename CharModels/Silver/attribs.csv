@@ -1,0 +1,24 @@
+Magic,SRM1
+
+Long Name,Silver the Hedgehog
+Short Name,Silver
+
+Primary Color,0xE5FFFA
+Accent Color,0x008A89
+
+Model Height,23
+Shadow Size,23
+
+Top Speed,300000
+Accel,3595
+Drift Speed,47
+Turn Speed,4875
+Turn Traction,1024
+Deaccel,1800
+Jump Height,38
+Roll Accel,300000
+Water Top Speed,98000
+Unk Attrib,150000
+Fall Accel,200
+Fall Max,200
+Weather Penalty, 1

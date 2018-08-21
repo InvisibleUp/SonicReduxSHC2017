@@ -1,0 +1,3 @@
+Copy your original 1998 SONICR.EXE to this directory, then compile and run "build.c" to create REDUX.EXE.
+This will require the GNU assembler and binutils installed on your system!
+Note that ONLY "redux.asm" is assembled. Any additional code files are only for reference and may be outdated or unused. To edit C code, re-compile it using the -S flag and copy/paste it in place into "redux.asm". Do keep in mind that manual ASM changes were required for some source files.

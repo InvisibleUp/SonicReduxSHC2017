@@ -1,0 +1,24 @@
+Magic,SRM1
+
+Long Name,Sonic the Hedgehog
+Short Name,Sonic
+
+Primary Color,0x5A6FE1
+Accent Color,0x8DAD42
+
+Model Height,23
+Shadow Size,23
+
+Top Speed,300000
+Accel,3600
+Drift Speed,35
+Turn Speed,4427
+Turn Traction,1024
+Deaccel,1800
+Jump Height,49
+Roll Accel,300000
+Water Top Speed,98000
+Unk Attrib,150000
+Fall Accel,200
+Fall Max,200
+Weather Penalty, 1

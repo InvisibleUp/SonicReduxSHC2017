@@ -1,0 +1,211 @@
+SONIC REDUX
+[2017 SHC release]
+DUE DATE: OCT 29 2017
+
+Goals (in order):
+    1. Custom character models
+    2. Custom character animations
+    3. Custom character textures
+    4. Character abilities segregated from model number
+    5. Custom code for characters
+    6. Fix character select screen/ending gfx/challenge mode stuff
+    7. Fine-tune character physics and stuff
+    
+---    
+    
+1-3: Custom character models
+
+    - Assets
+        - Sonic
+            X Model
+            X Textures (128x64)
+            X Rig
+            - Animations
+            X Physics Attributes
+            X Character Icon
+            X Sounds (N/A)
+        
+        - Tails
+            X Model
+            X Textures (64x64)
+            X Rig
+            - Animations
+            X Physics Attributes
+            X Character Icon
+            X Sounds
+        
+        - Knuckles
+            X Model
+            X Textures (64x64)
+            X Rig
+            - Animations
+            X Physics Attributes
+            X Character Icon
+            X Sounds (none)
+        
+        - Amy
+            X Model
+            X Textures (64x64)
+            X Rig
+            - Animations
+            X Physics Attributes
+            X Character Icon
+            X Sounds
+        
+        - Metal Sonic
+            X Model
+            X Textures
+            X Rig
+            - Animations
+            X Physics Attributes
+            X Character Icon
+            X Sounds
+        
+        - Blaze
+            X Model
+            X Textures (128x64)
+            X Rig
+            - Animations
+            X Physics Attributes
+            X Character Icon
+            - Sounds
+        
+        - Nack/Fang
+            X Model
+            - Textures
+            X Rig
+            - Animations
+            X Physics Attributes
+            X Character Icon
+            X Sounds
+        
+        - Silver
+            X Model
+            X Textures (128x64)
+            X Rig
+            - Animations
+            X Physics Attributes
+            X Character Icon
+            X Sounds (psychic on/off)
+    
+    - Code
+        X Reallocate character buffers
+        X Fix animation frame offsets
+        X Disable blinking/jet flames
+        X Load custom models (complex)
+        - Load custom models (dumb filename replacement, probably better)
+        X Load textures as 64x64 chunks [optional, really]
+        X Fix level loading texture page assignments (if more than 2 textures are needed)
+            (turns out they all fit snugly on one.)
+        - Tint map icon according to primary player color
+            X Just edit the map icons themselves
+        
+    - Tools
+        X OBJ -> SRM exporter
+        - OBJ -> GRD exporter (via normals)
+        - BVH -> SRA exporter
+        - BLEND -> all above [optional]
+        
+4-5: Custom character abilities
+    - Character code
+        - Sonic
+            X Map roll to camera button
+            X Change animation
+            X Rolling physics
+            X Particle effect? (dust/ball sprite from original)
+            X Sound effect on rollup
+            [ I just reused the old code. ]
+        
+        - Tails
+            X Map flight to action in air
+            X Flight physics
+            X Decrement flight timer in air, replenish on ground
+            X Increase height when holding down flight button
+            X Map flight meter to boost bar display
+            X fix wubawubawubawub
+        
+        X Knuckles
+            - Map gliding to double-jump-hold
+                X (Currently mapped to action in air)
+            X Gliding physics
+        
+        - Amy
+            X Hammer rebound (vertical)
+                X Check if in range of floor
+                - Get relative angle of nearest floor (within X units)
+                    (actually, for now let's just say it's flat. What's the difference?)
+                X Set new angle/speed of Amy from angle
+            - Hammer rebound (horizontal)
+                - Check if in range of wall
+                - Get relative angle of nearest wall (within X units)
+                X Set new angle/speed of Amy from angle
+                (I totally fudged it by hijacking normal collision but whatever)
+            - Make hammer appear/disappear
+        
+        - Metal Sonic
+            X Map jet activation to camera button
+            - Jet hover physics [scrapped, too similar to Silver]
+            X Jet boost physics
+            X Switch depending on ground state
+            - Display proper jet intensity/direction
+            X Sound effect proportional to jet intensity
+        
+        - Blaze
+            X Map boost to camera button
+            X Boost physics
+            X Particle effects of some sort [reused Amy's boost particles]
+            - Sound effects!
+                - One SFX on trigger
+                - Constant SFX on hold
+            - I really want to make Mario 64-style triple jump a thing for some reason. (don't)
+        
+        - Nack/Fang
+            - Ring collecting gun (raytracing? Dunno.) [optional]
+            X Have gun stun others using Eggman bomb code?
+                X Fix Eggman bomb code so it acually poses a threat
+                X Lose rings when hit by bomb
+                X Change SFX when rings lost
+            - Double-jump
+            X Map ring gun to camera button
+            X Set gun cooldown to boost bar display
+            - Make gun appear/disappear
+            X Sound effect on fire
+        
+        - Silver
+            X Texture switching (add/sub 64 to Y tex coord ala funct. used for blinking)
+            X Map hover to camera button
+            X Hover physics (frictionless)
+            X Lock out input when hovering (set all attribs to 0?)
+            X Have hover timer count down in air and reset on ground
+            X Change animation
+            X Sound effect on state change
+        
+    - Support code
+        X Character physics rewrite
+        - Fix any instance where character ID is referenced
+        - Default camera zoom to full out
+        X Boost bar
+        X Draw line of text
+        - Play SFX bundled with character
+        
+    - Build system
+        - Just enough of the mod loader to work
+            X Forget the mod loader entirely, just have one gigantic ASM file.
+        X Mod generator [scrapped]
+        - Set up mod generator config files [scrapped]
+
+6: Various fixes
+    X Disable unlocking from Challenge Mode [optional]
+    X Disable unlocking Super Sonic [optional]
+    X Unlock all characters from start
+    
+    X Character select screen
+        X New char select screen graphics
+        X Remove excess portraits
+        X Cap at character #8
+        - Center portraits
+        
+    - Other graphics
+        X Title screen
+            X fix copyright date
+        X Menus

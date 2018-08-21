@@ -1,0 +1,24 @@
+Magic,SRM1
+
+Long Name,Amy Rose
+Short Name,Amy
+
+Primary Color,0xF077E1
+Accent Color,0xFFBB73
+
+Model Height,23
+Shadow Size,23
+
+Top Speed,239616
+Accel,4112
+Drift Speed,35
+Turn Speed,4427
+Turn Traction,1024
+Deaccel,1800
+Jump Height,57
+Roll Accel,300000
+Water Top Speed,98000
+Unk Attrib,150000
+Fall Accel,200
+Fall Max,200
+Weather Penalty, 1

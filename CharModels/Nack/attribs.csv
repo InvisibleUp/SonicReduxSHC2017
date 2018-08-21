@@ -1,0 +1,24 @@
+Magic,SRM1
+
+Long Name,Fang the Sniper
+Short Name,Fang
+
+Primary Color,0x000089
+Accent Color,0xeeaa00
+
+Model Height,23
+Shadow Size,23
+
+Top Speed,245760
+Accel,3600
+Drift Speed,29
+Turn Speed,4363
+Turn Traction,1024
+Deaccel,1800
+Jump Height,49
+Roll Accel,300000
+Water Top Speed,98000
+Unk Attrib,150000
+Fall Accel,200
+Fall Max,200
+Weather Penalty, 1

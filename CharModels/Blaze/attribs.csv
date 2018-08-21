@@ -1,0 +1,24 @@
+Magic,SRM1
+
+Long Name,Blaze the Cat
+Short Name,Blaze
+
+Primary Color,0x9559AA
+Accent Color,0xFDC942
+
+Model Height,23
+Shadow Size,23
+
+Top Speed,259040
+Accel,3344
+Drift Speed,35
+Turn Speed,4427
+Turn Traction,1024
+Deaccel,1800
+Jump Height,56
+Roll Accel,300000
+Water Top Speed,98000
+Unk Attrib,150000
+Fall Accel,200
+Fall Max,200
+Weather Penalty, 1

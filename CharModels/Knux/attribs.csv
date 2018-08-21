@@ -1,0 +1,24 @@
+Magic,SRM1
+
+Long Name,Knuckles the Echidna
+Short Name,K.T.E
+
+Primary Color,0xE43F23
+Accent Color,0x259F88
+
+Model Height,23
+Shadow Size,23
+
+Top Speed,291808
+Accel,3568
+Drift Speed,38
+Turn Speed,4491
+Turn Traction,1024
+Deaccel,1800
+Jump Height,44
+Roll Accel,300000
+Water Top Speed,98000
+Unk Attrib,150000
+Fall Accel,200
+Fall Max,200
+Weather Penalty, 1

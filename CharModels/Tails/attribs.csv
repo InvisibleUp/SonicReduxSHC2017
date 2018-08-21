@@ -1,0 +1,24 @@
+Magic,SRM1
+
+Long Name,Miles "Tails" Prower
+Short Name,Tails
+
+Primary Color,0xFF9A00
+Accent Color,0x404040
+
+Model Height,23
+Shadow Size,23
+
+Top Speed,299776
+Accel,3712
+Drift Speed,32
+Turn Speed,4683
+Turn Traction,1024
+Deaccel,1800
+Jump Height,55
+Roll Accel,300000
+Water Top Speed,98000
+Unk Attrib,150000
+Fall Accel,200
+Fall Max,200
+Weather Penalty, 1

@@ -1,0 +1,24 @@
+Magic,SRM1
+
+Long Name,Metal Sonic
+Short Name,M.Sonic
+
+Primary Color,0x3E4118
+Accent Color,0xE43F23
+
+Model Height,23
+Shadow Size,23
+
+Top Speed,300000
+Accel,3200
+Drift Speed,51
+Turn Speed,4939
+Turn Traction,1024
+Deaccel,2824
+Jump Height,49
+Roll Accel,300000
+Water Top Speed,98000
+Unk Attrib,150000
+Fall Accel,200
+Fall Max,200
+Weather Penalty, 1

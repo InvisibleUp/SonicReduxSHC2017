@@ -1,0 +1,15 @@
+0,Running
+1,Jumping
+2,Idle
+3,SkidRight
+4,SkidLeft
+5,Hit
+6,Victory
+7,Lose
+8,RecoverLeft
+9,RecoverRight
+10,Duck
+11,RecoverDuck
+15,Falling
+16,Springing
+17,Stretching
